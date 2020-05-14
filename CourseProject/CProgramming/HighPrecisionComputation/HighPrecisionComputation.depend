@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1589432538 source:f:\大三下课内资料\c语言课设\1-高精度计算\highprecisioncomputation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
