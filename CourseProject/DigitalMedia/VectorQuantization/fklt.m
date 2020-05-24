@@ -1,5 +1,5 @@
 function [ data_2,label_2,center_2 ] = fklt( data,label,center,dim,num )
-%FKLT ½«data½µÎ¬µ½dimÎ¬£¬²¢³éÈ¡ÆäÖĞnum¸öÊı¾İ
+%FKLT å°†dataé™ç»´åˆ°dimç»´ï¼Œå¹¶æŠ½å–å…¶ä¸­numä¸ªæ•°æ®
 [~,n] = size(data);
 [~,n_2] = size(center);
 data_tmp = [data,center];
