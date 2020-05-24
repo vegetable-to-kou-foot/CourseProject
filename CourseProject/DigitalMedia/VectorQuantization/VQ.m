@@ -3,7 +3,7 @@ clc;
 class_num = 32;
 eps = 0.05;
 data = load('ColorHistogram.asc')';
-disp('Êı¾İ¶ÁÈ¡Íê³É');
+disp('æ•°æ®è¯»å–å®Œæˆ');
 data = data(2:end,:);
 [m,n] = size(data);
 center = mean(data,2);
@@ -12,7 +12,7 @@ class_now = zeros(1,n);
 time = 0;
 
 while pow2(time) < class_num
-    %ÂëÊ¸·ÖÁÑ
+    %ç çŸ¢åˆ†è£‚
     center_tmp = zeros(m,size(center,2)*2);
     for i=1:size(center,2)
         c = center(:,i);
@@ -20,13 +20,13 @@ while pow2(time) < class_num
         center_tmp(:,2*i) = c*(1-eps);
     end
     center = center_tmp;
-    % ½«Êı¾İµã·ÖÀà½øÂëÊ¸µÄÁÚÓò
+    % å°†æ•°æ®ç‚¹åˆ†ç±»è¿›ç çŸ¢çš„é‚»åŸŸ
     for i=1:size(center,2)
         c = center(:,i);
         dis(i,:) = sum((data-repmat(c,1,n)).^2);
     end
     [~,class_now] = min(dis);
-    % ÂëÊ¸Íê³ÉÒÆ¶¯
+    % ç çŸ¢å®Œæˆç§»åŠ¨
     for i=1:size(center,2)
         center(:,i) = mean(data(:,class_now==i),2);
     end
@@ -34,7 +34,7 @@ while pow2(time) < class_num
 end
 
 label = class_now;
-disp('Êı¾İ¼ÆËãÍê³É');
+disp('æ•°æ®è®¡ç®—å®Œæˆ');
 
 dim = 3;
 num = 10000;
@@ -57,4 +57,4 @@ for i=1:length(colors)
     end
 end
 grid on
-disp('Êı¾İ¿ÉÊÓ»¯Íê³É');
+disp('æ•°æ®å¯è§†åŒ–å®Œæˆ');
