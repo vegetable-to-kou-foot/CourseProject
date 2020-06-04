@@ -1,5 +1,6 @@
 # JustPractice
 Interesting but useless
+查到这里的同学参考一下就行了，千万不要抄哦 (ゝ∀･)
 
 ## Course project
 ### C语言课程设计
