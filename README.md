@@ -1,7 +1,5 @@
 # JustPractice
-Interesting but useless
-
-查到这里的同学参考一下就行了，千万不要抄哦 (ゝ∀･)
+查到这里的同学参考一下就行了，千万不要抄哦 (ゝ∀･)，会在报告里写上github主页的~。
 
 ## Course project
 ### C语言课程设计
