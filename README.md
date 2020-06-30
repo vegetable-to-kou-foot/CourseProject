@@ -1,4 +1,6 @@
 # Course project
+## 机器学习
+请看./CourseProject/MachineLearning。
 ## C语言课程设计
 ### 高精度计算工具
  高精度计算，有较好的鲁棒性。
